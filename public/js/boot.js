@@ -87,7 +87,7 @@ Welcome to Arch Linux!
 [  OK  ] Created slice system-systemd\x2dbacklight.slice.
          Starting Load/Save Screen Backlight Brightness of backlight:acpi_video0...
          Starting Load/Save Screen Backlight Brightness of backlight:intel_backlight...
-%G[  OK  ] Started Load/Save Screen Backlight Brightness of backlight:intel_backlight.
+[  OK  ] Started Load/Save Screen Backlight Brightness of backlight:intel_backlight.
 [  OK  ] Started Load/Save Screen Backlight Brightness of backlight:acpi_video0.
 [  OK  ] Created slice system-systemd\x2drfkill.slice.
          Starting Load/Save RF Kill Switch Status of rfkill0...
@@ -293,7 +293,7 @@ function displayNextLine() {
         }
 
         if (lineIndex == bootLines.length) {
-            sleep(1500).then(() => { window.location.href = "/desktop"; });
+            sleep(1500).then(() => { window.location.href = "/homepage"; });
         }
     }
 }

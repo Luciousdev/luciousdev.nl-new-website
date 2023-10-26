@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/* GENERAL STYLES */
+
+h1,
+h2,
+p {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+
+/* SCROLL BAR */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar {
+    position: absolute;
+    right: 0;
+    top: .25rem;
+    bottom: .25rem;
+    width: .5rem;
+    transform-origin: center right;
+    z-index: 4;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .scrollbar .scrollbar-thumb {
+        transition: .3s linear opacity
+    }
+    .scrollbar:hover .scrollbar-thumb {
+        opacity: 1
+    }
+}
+
+@media (max-width: 799px) {
+    .scrollbar {
+        display: none
+    }
+}
+
+.scrollbar-thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: mediumpurple;
+    width: .5rem;
+    border-radius: .1875rem;
+    opacity: 0;
+    margin: 0 .25rem;
+    cursor: grab;
+    box-shadow: 0 0 5px #00000040
+}
+
+.is-active .scrollbar-thumb {
+    opacity: 1
+}
+
+.has-scroll-dragging .scrollbar-thumb {
+    cursor: grabbing
+}
+
+
+/* BLOB */
+
+#blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.blur {
+    backdrop-filter: blur(12vmax);
+    position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+    #blob {
+        visibility: hidden;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg) scale(0.7, 0.9);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    }
+}
+
+
+/* NAV BAR */
+
+.menu a {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    color: #000;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu a:hover::after {
+    color: #000;
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+@media only screen and (max-width: 800px) {
+    .image {
+        height: 0px;
+        visibility: hidden;
+    }
+    .menu a {
+        font-size: 1rem;
+    }
+}
+
+
+/* HERO */
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.heroContainer h1 {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+    .heroContainer {
+        height: 50vh;
+    }
+}
+
+
+/* INTRO */
+
+.containerAbout h1 {
+    padding-top: 6vh;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+    .containerAbout h1 {
+        padding-top: 0vh;
+        visibility: hidden;
+    }
+}
+
+.circle-button {
+    font-size: 4rem;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.8);
+    border: rgb(255, 255, 255, 0.8) 2px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle-button:hover {
+    border: rgb(255, 255, 255, 0.6) 2px solid;
+}
+
+.circle-button .arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.circle-button:hover .arrow {
+    color: rgb(255, 255, 255, 0.6);
+    animation: moveArrow 1s forwards;
+}
+
+.arrow {
+    padding-left: 17px;
+}
+
+@keyframes moveArrow {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}

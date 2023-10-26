@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/desktop', function () {
-    return view('desktop');
+Route::get('/homepage', function () {
+    return view('index');
 });
