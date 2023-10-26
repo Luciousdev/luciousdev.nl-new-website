@@ -53,26 +53,60 @@ $heroText = "LUCY PUYENBROEK";
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col" data-aos="fade-down" data-aos-delay="150">
                         <p class="text-center">
-                            <a href="" class="circle-button">
+                            <a href="#start-story" class="circle-button">
                                 <span class="arrow">🡣</span>
                             </a>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col"></div>
-                </div>
-            </div>
         </section>
 
         {{-- FROM -> TO --}}
-        <div class="container-fluid">
-
+        <div class="container-fluid extra-space-big"></div>
+        {{-- Introduction header --}}
+        <div class="container-fluid section-header">
+            <div class="row">
+                <div class="col" data-aos="fade-up">
+                    <h2 class="text-center">My Journey</h2>
+                </div>
+            </div>
         </div>
+        {{-- AC --}}
+        <div class="container-fluid" id="start-story">
+            <div class="row">
+                <div class="col-md-6 text-center" data-aos="zoom-in-right">
+                    <h2>Amstelveen College <span class="h2-date-span">(2018-2022)</span></h2>
+                    <p class="first-text">For my middle school I went to Amstelveen College, there I did HAVO for 4 years until eventually going to MBO. To study what I really love doing, writing code.</p>
+                </div>
+                <div class="col-md-6 right-image-container" data-aos="zoom-in-left">
+                    <a href="https://www.webmd.com/sex-relationships/what-is-transgender" target="_blank">
+                        <img src="{{ asset('images/amstelveencollege.jpg') }}" alt="Transgender flag" class="right-image-rotate-right">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {{-- Me finding out im trans --}}
+        <div class="container-fluid extra-space-medium"></div>
+        <div class="container-fluid">
+            <div class="row" data-aos="zoom-in-right" data-aos-delay="150">
+                <div class="col-md-6 text-center">
+                    <h2>Finding myself</h2>
+                    <p class="first-text">During middle school I was really trying to find myself in this world. Who I really am, from hobbies to how I am as a person. During this time I slowly came out as trans, and now I'm an proud trans woman going happy through life. As my true self.</p>
+                </div>
+                <div class="col-md-6 right-image-container" data-aos="zoom-in-left" data-aos-delay="150">
+                    <a href="https://amstelveencollege.nl/" target="_blank">
+                        <img src="{{ asset('images/transflag.webp') }}" alt="Amstelveen College" class="right-image-rotate-left">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {{-- ROC --}}
+
     </div>
 
     <span class="scrollbar"><span class="scrollbar-thumb" style="height: 374.398px; transform: translate3d(0px, 562.19px, 0px);"></span></span>

@@ -1,7 +1,7 @@
 {{-- NAV BAR --}}
 <section class="section-style-top">
     <div class="menu">
-        <div class="container bg-color">
+        <div class="container-fluid bg-color">
             <div class="row justify-content-between align-items-center">
                 <div class="col-auto">
                     <ul class="nav">

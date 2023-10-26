@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +23,24 @@ p {
 
 a {
     color: white;
+}
+
+img {
+    /* give the image natural rounded corners so do not just set it to 50% */
+    border-radius: 5%;
+}
+
+.extra-space-big {
+    /* display: none; */
+    height: 50vh;
+}
+
+.extra-space-medium {
+    height: 25vh;
+}
+
+.extra-space-small {
+    height: 10vh;
 }
 
 
@@ -241,4 +260,83 @@ body::-webkit-scrollbar {
     to {
         top: 0;
     }
+}
+
+.section-header {
+    margin-bottom: 20vh;
+}
+
+
+/* FROM -> TO */
+
+.right-image-rotate-right {
+    width: 20vw;
+    height: auto;
+    margin: auto;
+    display: block;
+    rotate: 10deg;
+}
+
+.right-image-rotate-left {
+    width: 20vw;
+    height: auto;
+    margin: auto;
+    display: block;
+    rotate: -10deg;
+}
+
+.right-image-rotate-none {
+    width: 20vw;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.extra-space-big {
+    /* display: none; */
+    height: 50vh;
+}
+
+.first-text {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@media only screen and (max-width: 800px) {
+    .right-image-rotate-right {
+        width: 60vw;
+        height: auto;
+        margin: auto;
+        display: block;
+        rotate: 10deg;
+    }
+    .right-image-rotate-left {
+        width: 60vw;
+        height: auto;
+        margin: auto;
+        display: block;
+        rotate: -10deg;
+    }
+    .right-image-rotate-none {
+        width: 60vw;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+    .extra-space {
+        /* display: none; */
+        height: 20vh;
+    }
+    .first-text {
+        padding-top: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 9vh;
+    }
+}
+
+.h2-date-span {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255, 0.8);
 }
