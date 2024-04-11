@@ -82,7 +82,7 @@ $heroText = "LUCY PUYENBROEK";
                     <p class="first-text">For my middle school I went to Amstelveen College, there I did HAVO for 4 years until eventually going to MBO. To study what I really love doing, writing code.</p>
                 </div>
                 <div class="col-md-6 right-image-container" data-aos="zoom-in-left">
-                    <a href="https://www.webmd.com/sex-relationships/what-is-transgender" target="_blank">
+                    <a href="https://amstelveencollege.nl/" target="_blank">
                         <img src="{{ asset('images/amstelveencollege.jpg') }}" alt="Transgender flag" class="right-image-rotate-right">
                     </a>
                 </div>
@@ -98,7 +98,7 @@ $heroText = "LUCY PUYENBROEK";
                     <p class="first-text">During middle school I was really trying to find myself in this world. Who I really am, from hobbies to how I am as a person. During this time I slowly came out as trans, and now I'm an proud trans woman going happy through life. As my true self.</p>
                 </div>
                 <div class="col-md-6 right-image-container" data-aos="zoom-in-left" data-aos-delay="150">
-                    <a href="https://amstelveencollege.nl/" target="_blank">
+                    <a href="https://www.webmd.com/sex-relationships/what-is-transgender" target="_blank">
                         <img src="{{ asset('images/transflag.webp') }}" alt="Amstelveen College" class="right-image-rotate-left">
                     </a>
                 </div>

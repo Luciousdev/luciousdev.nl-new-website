@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +17,21 @@ body {
 
 /* GENERAL STYLES */
 
-h1,
-h2,
+h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+    color: white;
+}
+
 p {
     color: white;
 }
